@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  /*transform: rotate(10deg) translate(70%) ;*/
+  /*transform: rotate3d(1, -2, 1 30deg);*/
+  /*transform: rotate(30deg) translate(120px);*/
+  transform: perspective(100px) translateY(30px);
+}
