@@ -15,6 +15,79 @@
   margin-top: 20px;
   /*transform: rotate(10deg) translate(70%) ;*/
   /*transform: rotate3d(1, -2, 1 30deg);*/
-  /*transform: rotate(30deg) translate(120px);*/
+  /*transform: rotate(30deg) translate(120px);
+  scale allows us to shrink or grow element*/
   transform: perspective(100px) translateY(30px);
+}
+
+.image:hover {
+  transform: rotate(180deg) translate(120px);
+  transition: background-color 2s ease-in-out 0.45s;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+a {
+  flex: 1;
+  text-decoration: none;
+  background-color: grey;
+  box-shadow: 0 0 14px powderblue;
+  color: wheat;
+  border-radius: 1rem;
+  border: 1px dotted black;
+  padding: 1rem;
+  margin: 20px;
+  text-align: center;
+  transition: all 2s ease-in-out 0.44s;
+}
+
+@keyframes scale {
+    50% {
+
+      transform: scale(0.5);
+
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+/*Keyframes use percentage*/
+
+  @keyframes opacity {
+    50% {
+      opacity: 1;
+    }
+
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+a:hover,
+a:focus {
+  background-color: silver;
+  color: #333;
+}
+
+@keyframes a {
+
+  from {
+    background-color: red;
+  }
+
+  to {
+    background-color: purple;
+  }
 }
