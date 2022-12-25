@@ -70,4 +70,53 @@
       padding: 7rem;
       font-size: 16rem;
     }
-   }*/
+
+    :nth-child(3) {
+
+    }
+   }
+   
+   body {
+    margin: 24px;
+   }
+
+   @media (max-width: 600px) {
+
+      body{
+         margin: 8px;
+   }
+   */
+
+   body {
+    background: purple;
+  }
+  
+  @media (max-width: 900px) {
+    body {
+      background: green;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    body {
+      background: brown;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    body {
+      background: pink;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    body {
+      background: blue;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    body {
+      background: orange;
+    }
+  }
