@@ -1,3 +1,225 @@
+/*.element {
+  transform: translate(), scale(), skew() rotate();
+  transform: scale(0.25, 1.5), scaleX(0.25), scaleY(1.5);
+  transform: skew(42deg, 32deg) skewX(42deg), skewY(32deg);
+  transform: translateX(), translateY(), translate() translateXY(20px, -33%);
+  transform: rotate(45deg) translate(200%);
+ }
+
+ .red-box,
+ .blue-box {
+ position: absolute;
+ width: 100px;
+ height: 100px;
+ }
+
+ .red-box {
+  background:  red;
+  transform: rotate(45deg) translate(200%);
+ }
+
+ .blue-box {
+  background:  blue;
+  transform: translate(200%) rotate(45deg);
+ }
+ transform: perspective();
+ transform: scaleZ(), scale3d();
+ rotate(), scale(), translate();
+ transform: matrix();
+ transform: matrix3d();
+ rotate an element on 3D Example
+  - transform: rotateX();
+   transform: rotateY();
+   transform: rotateZ();
+   transform: rotate3d();
+
+  div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+animation-duration: 2s;
+}
+
+   @keyframes example {
+    from {background-color: pink;}
+    to {background-color: brown;}
+   }
+
+   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+   difference between auto-fill and auto-fit is that auto-fit occupies the whole space while auto-fill takes the space given only
+
+   .grid div:nth-child(2) {
+     order: 1;
+   }
+
+   * {
+    box-sizing: border;
+   }
+
+   body {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-template: repeat(3, 200px) / repeat(4, 1fr);
+    grid-auto-rows: minmax(80px, auto);
+   }
+
+
+   .grid div:nth-child (1) {
+    grid-column: 1 / -1;
+    z-index: 4;
+   }
+
+   .white {
+    grid-row: 3;
+    grid-column: 1 / -1;
+   }
+
+  .grid {
+    grid-template-areas
+    grid-template-columns:[content-start] 1fr [content-end] ;
+  }
+
+  @media (min-width: 640px) {
+    .grid {
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas: 
+       "hd hd"
+       "sidebar main"
+       "ft ft"
+      ;
+
+      use dot to skip grid.
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid template column: repeat(4, 1fr);
+    grid template rows: minmax(200px, auto);
+    grid template column: max-content 1fr 1fr / min-content 1fr 1fr / fit-content(10em) 1fr 1fr; 
+    grid auto rows: 100px;
+    grid auto flows: ;
+    grid-gap: 20px; 
+  }
+
+  @supports (display: grid;) {
+    .message {
+      display: none;
+    }
+  }/*.element {
+  transform: translate(), scale(), skew() rotate();
+  transform: scale(0.25, 1.5), scaleX(0.25), scaleY(1.5);
+  transform: skew(42deg, 32deg) skewX(42deg), skewY(32deg);
+  transform: translateX(), translateY(), translate() translateXY(20px, -33%);
+  transform: rotate(45deg) translate(200%);
+ }
+
+ .red-box,
+ .blue-box {
+ position: absolute;
+ width: 100px;
+ height: 100px;
+ }
+
+ .red-box {
+  background:  red;
+  transform: rotate(45deg) translate(200%);
+ }
+
+ .blue-box {
+  background:  blue;
+  transform: translate(200%) rotate(45deg);
+ }
+ transform: perspective();
+ transform: scaleZ(), scale3d();
+ rotate(), scale(), translate();
+ transform: matrix();
+ transform: matrix3d();
+ rotate an element on 3D Example
+  - transform: rotateX();
+   transform: rotateY();
+   transform: rotateZ();
+   transform: rotate3d();
+
+  div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+animation-duration: 2s;
+}
+
+   @keyframes example {
+    from {background-color: pink;}
+    to {background-color: brown;}
+   }
+
+   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+   difference between auto-fill and auto-fit is that auto-fit occupies the whole space while auto-fill takes the space given only
+
+   .grid div:nth-child(2) {
+     order: 1;
+   }
+
+   * {
+    box-sizing: border;
+   }
+
+   body {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-template: repeat(3, 200px) / repeat(4, 1fr);
+    grid-auto-rows: minmax(80px, auto);
+   }
+
+
+   .grid div:nth-child (1) {
+    grid-column: 1 / -1;
+    z-index: 4;
+   }
+
+   .white {
+    grid-row: 3;
+    grid-column: 1 / -1;
+   }
+
+  .grid {
+    grid-template-areas
+    grid-template-columns:[content-start] 1fr [content-end] ;
+  }
+
+  @media (min-width: 640px) {
+    .grid {
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas: 
+       "hd hd"
+       "sidebar main"
+       "ft ft"
+      ;
+
+      use dot to skip grid.
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid template column: repeat(4, 1fr);
+    grid template rows: minmax(200px, auto);
+    grid template column: max-content 1fr 1fr / min-content 1fr 1fr / fit-content(10em) 1fr 1fr; 
+    grid auto rows: 100px;
+    grid auto flows: ;
+    grid-gap: 20px; 
+  }
+
+  @supports (display: grid;) {
+    .message {
+      display: none;
+    }
+  }*/
+
 body, html {
   height: 100%;
   margin: 0;
